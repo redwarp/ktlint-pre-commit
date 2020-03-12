@@ -1,6 +1,12 @@
--   id: ktlint
+-   id: ktlintCheck
     name: Ktlint format for your kotlin code 
     description: Runs ktlint over your kotlin files and format what it can.
-    entry: ./run-ktlint.sh
+    entry: ./run-ktlint-check.sh
+    language: script
+    files: \.kt$ # We don't technically need this, as the script will filter for us, but this will allow the hook to be skipped if no Kotlin is changed.
+-   id: ktlintFormat
+    name: Ktlint format for your kotlin code 
+    description: Runs ktlint over your kotlin files and format what it can.
+    entry: ./run-ktlint-format.sh
     language: script
     files: \.kt$ # We don't technically need this, as the script will filter for us, but this will allow the hook to be skipped if no Kotlin is changed.
