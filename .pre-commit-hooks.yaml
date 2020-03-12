@@ -4,9 +4,3 @@
     entry: ./run-ktlint.sh
     language: script
     files: \.kt$ # We don't technically need this, as the script will filter for us, but this will allow the hook to be skipped if no Kotlin is changed.
--   id: ktlintFormat
-    name: Ktlint formatter for your kotlin code 
-    description: Runs ktlint over your kotlin files
-    entry: ./run-ktlintFormat.sh
-    language: script
-    files: \.kt$ # We don't technically need this, as the script will filter for us, but this will allow the hook to be skipped if no Kotlin is changed.
