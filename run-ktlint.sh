@@ -3,8 +3,8 @@ mkdir -p .cache
 cd .cache
 if [ ! -f ktlint ]
 then
-    curl -sSLO https://github.com/shyiko/ktlint/releases/download/0.29.0/ktlint
-    chmod 755 ktlint
+    curl -sSLO https://github.com/pinterest/ktlint/releases/download/0.36.0/ktlint
+    chmod a+x ktlint
 fi
 cd ..
 
