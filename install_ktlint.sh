@@ -9,6 +9,4 @@ then
 fi
 cd ..
 
-changed_kotlin_files=$(git diff --cached --name-only --diff-filter=ACMR | grep ".*kt$" )
-echo $changed_kotlin_files
-.cache/ktlint_3_60_0 $changed_kotlin_files
+export KTLINT=ktlint_3_60_0
